@@ -1,0 +1,4 @@
+Peter: favcolor=blue
+Nick: favcolor=red
+Alex: favcolor=green
+Nat: favcolor=red

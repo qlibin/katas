@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE vxml PUBLIC "-//BeVocal Inc//VoiceXML 2.0//EN"
+		"http://cafe.bevocal.com/libraries/dtd/vxml2-0-bevocal.dtd">
+
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml">
+
+	<!-- This piece of JavaScript code actually computes the factorial. -->
+	<script>
+		<![CDATA[
+       function factorial(n) {return (n <= 1) ? 1 : n * factorial(n-1);}
+     ]]>
+	</script>
+
+	<!-- Primary VoiceXML form for the application -->
+	<form id="computefactorial">
+
+		<!-- variable to hold result -->
+		<var name="result"/>
+
+		<!-- The field element holds 1 piece of info gotten from the caller. -->
+		<field name="num" type="number">
+
+			<!-- Ask the caller for the information. -->
+			<prompt>please say a number </prompt>
+
+			<!-- The filled tag is run when the interpreter -->
+			<!-- gets a valid answer from the caller -->
+			<filled>
+
+				<!-- Compute the factorial and assign it to the result variable -->
+				<assign
+						name="result"
+						expr="factorial(num)" />
+				<!-- Tell the caller the answer -->
+				<prompt>The factorial of
+					<value expr="num"/> is
+					<value expr="result"/>
+				</prompt>
+
+				<!-- Close everything off. -->
+			</filled>
+		</field>
+	</form>
+</vxml>

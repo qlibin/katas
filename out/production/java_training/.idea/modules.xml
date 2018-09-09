@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gs-rest-service/complete/gs-rest-service.iml" filepath="$PROJECT_DIR$/gs-rest-service/complete/gs-rest-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_training.iml" filepath="$PROJECT_DIR$/java_training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mics/mics.iml" filepath="$PROJECT_DIR$/mics/mics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pingpong/sample-rest-service.iml" filepath="$PROJECT_DIR$/pingpong/sample-rest-service.iml" />
+    </modules>
+  </component>
+</project>
